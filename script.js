@@ -3,24 +3,59 @@
 
 function playGame() {
   "use strict";
+
+  // Set up Arrays for Selected Numbers and User's Guess's
+  var allNumbersGuessed = [];
+  var allNumbersGenerated = [];
   
   // Create the random numbers for the powerball
   var num1 = Math.floor(Math.random() * 100) + 1;
+  allNumbersGenerated.push(num1);
+
   var num2 = Math.floor(Math.random() * 100) + 1;
+  allNumbersGenerated.push(num2);
+
   var num3 = Math.floor(Math.random() * 100) + 1;
+  allNumbersGenerated.push(num3);
+
   var num4 = Math.floor(Math.random() * 100) + 1;
+  allNumbersGenerated.push(num4);
+
   var num5 = Math.floor(Math.random() * 100) + 1;
+  allNumbersGenerated.push(num5);
+
   var num6 = Math.floor(Math.random() * 100) + 1;
+  allNumbersGenerated.push(num6);
+
   var num7 = Math.floor(Math.random() * 100) + 1;
+  allNumbersGenerated.push(num7);
   
   // Users guess
   var userNum1 = parseInt(document.getElementById("guess1").value);
+  allNumbersGuessed.push(userNum1);
+
   var userNum2 = parseInt(document.getElementById("guess2").value);
+  allNumbersGuessed.push(userNum2);
+
   var userNum3 = parseInt(document.getElementById("guess3").value);
+  allNumbersGuessed.push(userNum3);
+
   var userNum4 = parseInt(document.getElementById("guess4").value);
+  allNumbersGuessed.push(userNum4);
+
   var userNum5 = parseInt(document.getElementById("guess5").value);
+  allNumbersGuessed.push(userNum5);
+
   var userNum6 = parseInt(document.getElementById("guess6").value);
+  allNumbersGuessed.push(userNum6);
+
   var userNum7 = parseInt(document.getElementById("guess7").value);
+  allNumbersGuessed.push(userNum7);
+
+  console.log(allNumbersGuessed);
+  console.log(allNumbersGenerated);
+
+
   
   // Output each random number
   document.getElementById("test1").innerHTML = num1;
@@ -30,8 +65,12 @@ function playGame() {
   document.getElementById("test5").innerHTML = num5;
   document.getElementById("test6").innerHTML = num6;
   document.getElementById("test7").innerHTML = num7;
+
+
   
   // Set up several conditions to see if any numbers match
+
+
   if (num1 === userNum1 || num2 === userNum1) {
       document.getElementById("winner").innerHTML = "You got one!!";
   } else if (num3 === userNum1 || num4 === userNum1) {
