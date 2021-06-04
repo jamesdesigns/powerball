@@ -55,7 +55,14 @@ function playGame() {
   console.log(allNumbersGuessed);
   console.log(allNumbersGenerated);
 
+  allNumbersGuessed.forEach((nums, index) => {
+    console.log(`Index: ${index} Value: ${nums}`);
+  });
 
+  // var anyMatches = allNumbersGenerated === allNumbersGuessed ? true : false;
+  var matchArrays = [...allNumbersGenerated, ...allNumbersGuessed];
+  console.log(matchArrays);
+  
   
   // Output each random number
   document.getElementById("test1").innerHTML = num1;
