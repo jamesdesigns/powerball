@@ -5,13 +5,13 @@ function playGame() {
   "use strict";
   
   // Create the random numbers for the powerball
-  var num1 = Math.floor(Math.random() * 101);
-  var num2 = Math.floor(Math.random() * 101);
-  var num3 = Math.floor(Math.random() * 101);
-  var num4 = Math.floor(Math.random() * 101);
-  var num5 = Math.floor(Math.random() * 101);
-  var num6 = Math.floor(Math.random() * 101);
-  var num7 = Math.floor(Math.random() * 101);
+  var num1 = Math.floor(Math.random() * 100) + 1;
+  var num2 = Math.floor(Math.random() * 100) + 1;
+  var num3 = Math.floor(Math.random() * 100) + 1;
+  var num4 = Math.floor(Math.random() * 100) + 1;
+  var num5 = Math.floor(Math.random() * 100) + 1;
+  var num6 = Math.floor(Math.random() * 100) + 1;
+  var num7 = Math.floor(Math.random() * 100) + 1;
   
   // Users guess
   var userNum1 = parseInt(document.getElementById("guess1").value);
