@@ -55,7 +55,18 @@ function playGame() {
   console.log(allNumbersGuessed);
   console.log(allNumbersGenerated);
 
+  allNumbersGuessed.forEach((nums, index) => {
+    // This prints out the index of the allNumbersGuessed array and the value guessed:
+    console.log(`Index: ${index} Value: ${nums}`);
+  });
 
+  // var anyMatches = allNumbersGenerated === allNumbersGuessed ? true : false;
+  var matchArrays = [...allNumbersGenerated, ...allNumbersGuessed];
+  // This prints out both arrays and combines them
+  console.log(matchArrays);
+  // Now I need to figure out how to compare all values to see if any are of equal value
+ 
+  
   
   // Output each random number
   document.getElementById("test1").innerHTML = num1;
