@@ -65,7 +65,24 @@ function playGame() {
   // This prints out both arrays and combines them
   console.log(matchArrays);
   // Now I need to figure out how to compare all values to see if any are of equal value
- 
+  
+
+    if ( num1 === userNum1 || num2 === userNum2 || num3 === userNum3 || num4 === userNum4 || num5 === userNum5 || num6 === userNum6 || num7 === userNum7) {
+      console.log('You are a BIG winner!!');
+    } else {
+      console.log('You did not win!!');
+    }
+
+    console.log(num1);
+    console.log(userNum1);
+
+    console.log( num1 == userNum1 || num1 == userNum2 || num1 == userNum3 || num1 == userNum4 || num1 == userNum5 || num1 == userNum6 || num1 == userNum7 ? 'First Box is a match! You Win!!' : 'Better luck next time!');
+    console.log( num2 == userNum2 ? 'Second Box is a match! You Win!!' : 'Better luck next time!');
+    console.log( num3 == userNum3 ? 'Third Box is a match! You Win!!' : 'Better luck next time!');
+    console.log( num4 == userNum4 ? 'Fourth Box is a match! You Win!!' : 'Better luck next time!');
+    console.log( num5 == userNum5 ? 'Fifth Box is a match! You Win!!' : 'Better luck next time!');
+    console.log( num6 == userNum6 ? 'Sixth Box is a match! You Win!!' : 'Better luck next time!');
+    console.log( num7 == userNum7 ? 'Seventh Box is a match! You Win!!' : 'Better luck next time!');
   
   
   // Output each random number
@@ -82,67 +99,67 @@ function playGame() {
   // Set up several conditions to see if any numbers match
 
 
-  if (num1 === userNum1 || num2 === userNum1) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num3 === userNum1 || num4 === userNum1) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num5 === userNum1 || num6 === userNum1) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num7 === userNum1) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num1 === userNum2 || num2 === userNum2) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num3 === userNum2 || num4 === userNum2) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num5 === userNum2 || num6 === userNum2) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num7 === userNum2) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num1 === userNum3 || num2 === userNum3) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num3 === userNum3 || num4 === userNum3) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num5 === userNum3 || num6 === userNum3) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num7 === userNum3) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num1 === userNum4 || num2 === userNum4) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num3 === userNum4 || num4 === userNum4) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num5 === userNum4 || num6 === userNum4) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num7 === userNum4) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num1 === userNum5 || num2 === userNum5) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num3 === userNum5 || num4 === userNum5) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num5 === userNum5 || num6 === userNum5) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num7 === userNum5) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num1 === userNum6 || num2 === userNum6) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num3 === userNum6 || num4 === userNum6) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num5 === userNum6 || num6 === userNum6) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num7 === userNum6) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num1 === userNum7 || num2 === userNum7) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num3 === userNum7 || num4 === userNum7) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num5 === userNum7 || num6 === userNum7) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (num7 === userNum7) {
-      document.getElementById("winner").innerHTML = "You got one!!";
-  } else if (userNum1 === num1 && userNum2 === num2 && userNum3 === num3 && userNum4 === num4 && userNum5 === num5 && userNum6 === num6 && userNum7 === num7) {
-      document.getElementById("winner").innerHTML = "YOU WIN!!";
-  } else {
-      document.getElementById("winner").innerHTML = "You Lose!!";
-  }
+  // if (num1 === userNum1 || num2 === userNum1) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num3 === userNum1 || num4 === userNum1) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num5 === userNum1 || num6 === userNum1) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num7 === userNum1) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num1 === userNum2 || num2 === userNum2) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num3 === userNum2 || num4 === userNum2) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num5 === userNum2 || num6 === userNum2) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num7 === userNum2) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num1 === userNum3 || num2 === userNum3) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num3 === userNum3 || num4 === userNum3) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num5 === userNum3 || num6 === userNum3) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num7 === userNum3) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num1 === userNum4 || num2 === userNum4) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num3 === userNum4 || num4 === userNum4) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num5 === userNum4 || num6 === userNum4) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num7 === userNum4) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num1 === userNum5 || num2 === userNum5) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num3 === userNum5 || num4 === userNum5) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num5 === userNum5 || num6 === userNum5) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num7 === userNum5) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num1 === userNum6 || num2 === userNum6) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num3 === userNum6 || num4 === userNum6) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num5 === userNum6 || num6 === userNum6) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num7 === userNum6) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num1 === userNum7 || num2 === userNum7) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num3 === userNum7 || num4 === userNum7) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num5 === userNum7 || num6 === userNum7) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (num7 === userNum7) {
+  //     document.getElementById("winner").innerHTML = "You got one!!";
+  // } else if (userNum1 === num1 && userNum2 === num2 && userNum3 === num3 && userNum4 === num4 && userNum5 === num5 && userNum6 === num6 && userNum7 === num7) {
+  //     document.getElementById("winner").innerHTML = "YOU WIN!!";
+  // } else {
+  //     document.getElementById("winner").innerHTML = "You Lose!!";
+  // }
   
 }
 
