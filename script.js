@@ -76,7 +76,7 @@ function playGame() {
     console.log(num1);
     console.log(userNum1);
 
-    console.log( num1 == userNum1 || num1 == userNum2 || num1 == userNum3 || num1 == userNum4 || num1 == userNum5 || num1 == userNum6 || num1 == userNum7 ? 'First Box is a match! You Win!!' : 'Better luck next time!');
+    console.log( num1 == userNum1 ? 'First Box is a match! You Win!!' : 'Better luck next time!');
     console.log( num2 == userNum2 ? 'Second Box is a match! You Win!!' : 'Better luck next time!');
     console.log( num3 == userNum3 ? 'Third Box is a match! You Win!!' : 'Better luck next time!');
     console.log( num4 == userNum4 ? 'Fourth Box is a match! You Win!!' : 'Better luck next time!');
