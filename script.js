@@ -104,27 +104,32 @@ function playGame() {
 
     if (num2 == userNum2) {
       document.getElementById("guess2").style.backgroundColor = "red";
-      document.getElementById("guess1").style.color = "white";
+      document.getElementById("guess2").style.color = "white";
     }
 
     if (num3 == userNum3) {
       document.getElementById("guess3").style.backgroundColor = "red";
-      document.getElementById("guess1").style.color = "white";
+      document.getElementById("guess3").style.color = "white";
     }
 
     if (num4 == userNum4) {
       document.getElementById("guess4").style.backgroundColor = "red";
-      document.getElementById("guess1").style.color = "white";
+      document.getElementById("guess4").style.color = "white";
     }
 
     if (num5 == userNum5) {
-      document.getElementById("guess4").style.backgroundColor = "red";
-      document.getElementById("guess1").style.color = "white";
+      document.getElementById("guess5").style.backgroundColor = "red";
+      document.getElementById("guess5").style.color = "white";
     }
 
     if (num6 == userNum6) {
-      document.getElementById("guess4").style.backgroundColor = "red";
-      document.getElementById("guess1").style.color = "white";
+      document.getElementById("guess6").style.backgroundColor = "red";
+      document.getElementById("guess6").style.color = "white";
+    }
+
+    if (num7 == userNum7) {
+      document.getElementById("guess7").style.backgroundColor = "red";
+      document.getElementById("guess7").style.color = "white";
     }
   
   // Output each random number
