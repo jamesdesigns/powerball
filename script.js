@@ -89,13 +89,42 @@ function playGame() {
   
     if (num1 == userNum1 || num2 == userNum2 || num3 == userNum3 || num4 == userNum4 || num5 == userNum5 || num6 == userNum6) {
       score = 100;
-      document.getElementById("winner").innerHTML = `You are a winner! ${score}`;
-
+      document.getElementById("winner").innerHTML = `You are a winner! $${score}`;
     } else if (num7 == userNum7) {
       score = 100;
       document.getElementById("winner").innerHTML = `You just won BIG! $${score * 1000}`;
     } else {
       document.getElementById("winner").innerHTML = `Better luck next time!`;
+    }
+
+    if (num1 == userNum1) {
+      document.getElementById("guess1").style.backgroundColor = "red";
+      document.getElementById("guess1").style.color = "white";
+    }
+
+    if (num2 == userNum2) {
+      document.getElementById("guess2").style.backgroundColor = "red";
+      document.getElementById("guess1").style.color = "white";
+    }
+
+    if (num3 == userNum3) {
+      document.getElementById("guess3").style.backgroundColor = "red";
+      document.getElementById("guess1").style.color = "white";
+    }
+
+    if (num4 == userNum4) {
+      document.getElementById("guess4").style.backgroundColor = "red";
+      document.getElementById("guess1").style.color = "white";
+    }
+
+    if (num5 == userNum5) {
+      document.getElementById("guess4").style.backgroundColor = "red";
+      document.getElementById("guess1").style.color = "white";
+    }
+
+    if (num6 == userNum6) {
+      document.getElementById("guess4").style.backgroundColor = "red";
+      document.getElementById("guess1").style.color = "white";
     }
   
   // Output each random number
