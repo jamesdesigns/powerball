@@ -4,6 +4,8 @@
 function playGame() {
   "use strict";
 
+  var score = 0;
+
   // Set up Arrays for Selected Numbers and User's Guess's
   var allNumbersGuessed = [];
   var allNumbersGenerated = [];
@@ -67,7 +69,7 @@ function playGame() {
   // Now I need to figure out how to compare all values to see if any are of equal value
   
 
-    if ( num1 === userNum1 || num2 === userNum2 || num3 === userNum3 || num4 === userNum4 || num5 === userNum5 || num6 === userNum6 || num7 === userNum7) {
+    if ( num1 === userNum1 || num2 === userNum2 || num3 === userNum3 || num4 === userNum4 || num5 === userNum5 || num6 === userNum6) {
       console.log('You are a BIG winner!!');
     } else {
       console.log('You did not win!!');
@@ -76,6 +78,7 @@ function playGame() {
     console.log(num1);
     console.log(userNum1);
 
+  
     console.log( num1 == userNum1 ? 'First Box is a match! You Win!!' : 'Better luck next time!');
     console.log( num2 == userNum2 ? 'Second Box is a match! You Win!!' : 'Better luck next time!');
     console.log( num3 == userNum3 ? 'Third Box is a match! You Win!!' : 'Better luck next time!');
@@ -84,6 +87,16 @@ function playGame() {
     console.log( num6 == userNum6 ? 'Sixth Box is a match! You Win!!' : 'Better luck next time!');
     console.log( num7 == userNum7 ? 'Seventh Box is a match! You Win!!' : 'Better luck next time!');
   
+    if (num1 == userNum1 || num2 == userNum2 || num3 == userNum3 || num4 == userNum4 || num5 == userNum5 || num6 == userNum6) {
+      score = 100;
+      document.getElementById("winner").innerHTML = `You are a winner! ${score}`;
+
+    } else if (num7 == userNum7) {
+      score = 100;
+      document.getElementById("winner").innerHTML = `You just won BIG! $${score * 1000}`;
+    } else {
+      document.getElementById("winner").innerHTML = `Better luck next time!`;
+    }
   
   // Output each random number
   document.getElementById("test1").innerHTML = num1;
