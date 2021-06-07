@@ -89,10 +89,10 @@ function playGame() {
   
     if (num1 == userNum1 || num2 == userNum2 || num3 == userNum3 || num4 == userNum4 || num5 == userNum5 || num6 == userNum6) {
       score = 100;
-      document.getElementById("winner").innerHTML = `You are a winner! $${score}`;
+      document.getElementById("winner").innerHTML = `You are a winner!<br /> $${score}`;
     } else if (num7 == userNum7) {
       score = 100;
-      document.getElementById("winner").innerHTML = `You just won BIG! $${score * 1000}`;
+      document.getElementById("winner").innerHTML = `You just won BIG!<br /> $${score * 1000}`;
     } else {
       document.getElementById("winner").innerHTML = `Better luck next time!`;
     }
