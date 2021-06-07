@@ -11,25 +11,25 @@ function playGame() {
   var allNumbersGenerated = [];
   
   // Create the random numbers for the powerball
-  var num1 = Math.floor(Math.random() * 100) + 1;
+  var num1 = Math.floor(Math.random() * 69) + 1;
   allNumbersGenerated.push(num1);
 
-  var num2 = Math.floor(Math.random() * 100) + 1;
+  var num2 = Math.floor(Math.random() * 69) + 1;
   allNumbersGenerated.push(num2);
 
-  var num3 = Math.floor(Math.random() * 100) + 1;
+  var num3 = Math.floor(Math.random() * 69) + 1;
   allNumbersGenerated.push(num3);
 
-  var num4 = Math.floor(Math.random() * 100) + 1;
+  var num4 = Math.floor(Math.random() * 69) + 1;
   allNumbersGenerated.push(num4);
 
-  var num5 = Math.floor(Math.random() * 100) + 1;
+  var num5 = Math.floor(Math.random() * 69) + 1;
   allNumbersGenerated.push(num5);
 
-  var num6 = Math.floor(Math.random() * 100) + 1;
+  var num6 = Math.floor(Math.random() * 69) + 1;
   allNumbersGenerated.push(num6);
 
-  var num7 = Math.floor(Math.random() * 100) + 1;
+  var num7 = Math.floor(Math.random() * 26) + 1;
   allNumbersGenerated.push(num7);
   
   // Users guess

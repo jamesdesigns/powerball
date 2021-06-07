@@ -41,6 +41,8 @@ h1 {
   justify-content: center;
 }
 
+#instructions { text-align: center; }
+
 #winner {
   display: flex;
   flex-direction: row;
